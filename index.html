@@ -27,6 +27,7 @@
 
 <div class="officer-info-bar">
   <span class="officer-pill" id="officerInfoText">👮 විමර්ශන නිලධාරී: -</span>
+  <span class="officer-pill" id="cloudSyncStatus">☁️ Cloud Sync: -</span>
   <button onclick="editOfficerInfo()">✏️ නිලධාරී තොරතුරු වෙනස් කරන්න</button>
   <button onclick="openAccountSettings()">⚙️ ගිණුම් සැකසුම්</button>
   <button onclick="doLogout()">🚪 ඉවත් වන්න (Logout)</button>
@@ -303,6 +304,12 @@
     </div>
   </div>
 </div>
+
+<!-- ===== Firebase (Cloud Sync — Phone/Laptop අතර දත්ත Real-time Sync කිරීම සඳහා) ===== -->
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+<script src="firebase-sync.js"></script>
 
 <script src="app.js"></script>
 <script>

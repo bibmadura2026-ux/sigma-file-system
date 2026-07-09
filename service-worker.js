@@ -6,7 +6,7 @@
 // localStorage තුළම පවතී, Service Worker එකෙන් ඒවාට සම්බන්ධයක් නැත.
 // ===================================================================
 
-const CACHE_NAME = 'sigma-file-mgmt-v1';
+const CACHE_NAME = 'sigma-file-mgmt-v2';
 
 // App Shell — පළමු වරට Load වන විට Cache වන Core Files
 const APP_SHELL_FILES = [
@@ -14,6 +14,7 @@ const APP_SHELL_FILES = [
   './index.html',
   './styles.css',
   './app.js',
+  './firebase-sync.js',
   './manifest.json',
   './SIGMA_Logo.png',
   './icons/icon-192.png',

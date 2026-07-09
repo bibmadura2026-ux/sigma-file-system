@@ -14,6 +14,7 @@ function loadRecords() {
 
 function saveAll() {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(records));
+  if (typeof pushRecordsToCloud === 'function') pushRecordsToCloud(false);
 }
 
 function daysUntil(dateStr) {
@@ -1024,6 +1025,7 @@ function showLoginOverlay() {
 function hideLoginOverlay() {
   document.getElementById('loginOverlay').style.display = 'none';
   renderOfficerInfoBar();
+  if (typeof initCloudSync === 'function') initCloudSync();
 }
 
 function showAuthError(msg) {
